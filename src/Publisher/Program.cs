@@ -1,7 +1,7 @@
 ﻿using Azure.Messaging.ServiceBus;
 
 
-const string _connectionString = "Endpoint=sb://127.0.0.1;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;";
+const string _connectionString = "Endpoint=sb://localhost:5672;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;";
 const string _queueName = "queue.1";
 
 const int numOfMessages = 3;

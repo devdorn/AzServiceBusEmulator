@@ -1,13 +1,13 @@
 ﻿using Azure.Messaging.ServiceBus;
 
-const string _connectionString = "Endpoint=sb://127.0.0.1;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;";
-const string queueName = "queue.1e";
+const string _connectionString = "Endpoint=sb://localhost:5672;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;";
+const string queueName = "queue.1";
 
 var client = new ServiceBusClient(_connectionString);
 
 var serviceBusReceiverOptions = new ServiceBusReceiverOptions
 {
-    ReceiveMode = ServiceBusReceiveMode.PeekLock,
+    ReceiveMode = ServiceBusReceiveMode.PeekLock
 };
 
 var receiver = client.CreateReceiver(queueName, serviceBusReceiverOptions);
@@ -24,12 +24,6 @@ try
         {
             Console.WriteLine($"Received message: {message.Body}");
             await receiver.CompleteMessageAsync(message);
-
-            {
-                Console.WriteLine($"Received message: {message.Body}");
-
-                await receiver.CompleteMessageAsync(message);
-            }
         }
         else
         {

@@ -9,11 +9,20 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Emulator", "Emulator", "{D7E2D17B-0EBB-4B0E-A130-D9141E57EDF6}"
 	ProjectSection(SolutionItems) = preProject
 		.env = .env
+		Config-schema.json = Config-schema.json
 		config.json = config.json
 		docker-compose.yaml = docker-compose.yaml
 	EndProjectSection
 	ProjectSection(FolderGlobals) = preProject
 		X_5_4Source_4Learning_4AzServiceBusEmulator_4src_4ServiceBusEmulator_4config_1json__JsonSchema = ..\..\Config-schema.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{86C3EED1-E191-4CFA-81BD-FA03A7D299B2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global

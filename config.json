@@ -12,8 +12,8 @@
 							"DuplicateDetectionHistoryTimeWindow": "PT20S",
 							"ForwardDeadLetteredMessagesTo": "",
 							"ForwardTo": "",
-							"LockDuration": "",
-							"MaxDeliveryCount": 3,
+							"LockDuration": "PT1M",
+							"MaxDeliveryCount": 10,
 							"RequiresDuplicateDetection": false,
 							"RequiresSession": false
 						}
